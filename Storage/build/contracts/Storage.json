@@ -1,0 +1,1092 @@
+{
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_x",
+          "type": "int128"
+        }
+      ],
+      "outputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "gas": 35405,
+      "inputs": [
+        {
+          "name": "_x",
+          "type": "int128"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "gas": 1181,
+      "inputs": [],
+      "name": "storedData",
+      "outputs": [
+        {
+          "name": "",
+          "type": "int128"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": [
+    "contracts/Storage.vy"
+  ],
+  "ast": {
+    "ast_type": "Module",
+    "body": [
+      {
+        "annotation": {
+          "args": [
+            {
+              "ast_type": "Name",
+              "col_offset": 19,
+              "end_col_offset": 25,
+              "end_lineno": 1,
+              "id": "int128",
+              "lineno": 1,
+              "node_id": 7,
+              "src": "19:6:0"
+            }
+          ],
+          "ast_type": "Call",
+          "col_offset": 12,
+          "end_col_offset": 26,
+          "end_lineno": 1,
+          "func": {
+            "ast_type": "Name",
+            "col_offset": 12,
+            "end_col_offset": 18,
+            "end_lineno": 1,
+            "id": "public",
+            "lineno": 1,
+            "node_id": 5,
+            "src": "12:6:0"
+          },
+          "keyword": null,
+          "keywords": [],
+          "lineno": 1,
+          "node_id": 4,
+          "src": "12:14:0"
+        },
+        "ast_type": "AnnAssign",
+        "col_offset": 0,
+        "end_col_offset": 26,
+        "end_lineno": 1,
+        "lineno": 1,
+        "node_id": 1,
+        "simple": 1,
+        "src": "0:26:0",
+        "target": {
+          "ast_type": "Name",
+          "col_offset": 0,
+          "end_col_offset": 10,
+          "end_lineno": 1,
+          "id": "storedData",
+          "lineno": 1,
+          "node_id": 2,
+          "src": "0:10:0"
+        },
+        "value": null
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 16,
+                "end_col_offset": 22,
+                "end_lineno": 4,
+                "id": "int128",
+                "lineno": 4,
+                "node_id": 12,
+                "src": "52:6:0"
+              },
+              "arg": "_x",
+              "ast_type": "arg",
+              "col_offset": 13,
+              "end_col_offset": 22,
+              "end_lineno": 4,
+              "lineno": 4,
+              "node_id": 11,
+              "src": "49:9:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 13,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 22,
+          "end_lineno": 4,
+          "lineno": 4,
+          "node_id": 10,
+          "src": "49:9:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 5,
+            "lineno": 5,
+            "node_id": 14,
+            "src": "65:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "storedData",
+              "col_offset": 4,
+              "end_col_offset": 19,
+              "end_lineno": 5,
+              "lineno": 5,
+              "node_id": 15,
+              "src": "65:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 5,
+                "id": "self",
+                "lineno": 5,
+                "node_id": 16,
+                "src": "65:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 22,
+              "end_col_offset": 24,
+              "end_lineno": 5,
+              "id": "_x",
+              "lineno": 5,
+              "node_id": 19,
+              "src": "83:2:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 7,
+            "end_lineno": 3,
+            "id": "public",
+            "lineno": 3,
+            "node_id": 21,
+            "src": "29:6:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 24,
+        "end_lineno": 5,
+        "lineno": 3,
+        "name": "__init__",
+        "node_id": 9,
+        "pos": null,
+        "returns": null,
+        "src": "28:57:0"
+      },
+      {
+        "args": {
+          "args": [
+            {
+              "annotation": {
+                "ast_type": "Name",
+                "col_offset": 11,
+                "end_col_offset": 17,
+                "end_lineno": 8,
+                "id": "int128",
+                "lineno": 8,
+                "node_id": 26,
+                "src": "110:6:0"
+              },
+              "arg": "_x",
+              "ast_type": "arg",
+              "col_offset": 8,
+              "end_col_offset": 17,
+              "end_lineno": 8,
+              "lineno": 8,
+              "node_id": 25,
+              "src": "107:9:0"
+            }
+          ],
+          "ast_type": "arguments",
+          "col_offset": 8,
+          "default": null,
+          "defaults": [],
+          "end_col_offset": 17,
+          "end_lineno": 8,
+          "lineno": 8,
+          "node_id": 24,
+          "src": "107:9:0"
+        },
+        "ast_type": "FunctionDef",
+        "body": [
+          {
+            "ast_type": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 9,
+            "lineno": 9,
+            "node_id": 28,
+            "src": "123:20:0",
+            "target": {
+              "ast_type": "Attribute",
+              "attr": "storedData",
+              "col_offset": 4,
+              "end_col_offset": 19,
+              "end_lineno": 9,
+              "lineno": 9,
+              "node_id": 29,
+              "src": "123:15:0",
+              "value": {
+                "ast_type": "Name",
+                "col_offset": 4,
+                "end_col_offset": 8,
+                "end_lineno": 9,
+                "id": "self",
+                "lineno": 9,
+                "node_id": 30,
+                "src": "123:4:0"
+              }
+            },
+            "value": {
+              "ast_type": "Name",
+              "col_offset": 22,
+              "end_col_offset": 24,
+              "end_lineno": 9,
+              "id": "_x",
+              "lineno": 9,
+              "node_id": 33,
+              "src": "141:2:0"
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [
+          {
+            "ast_type": "Name",
+            "col_offset": 1,
+            "end_col_offset": 7,
+            "end_lineno": 7,
+            "id": "public",
+            "lineno": 7,
+            "node_id": 35,
+            "src": "92:6:0"
+          }
+        ],
+        "doc_string": null,
+        "end_col_offset": 24,
+        "end_lineno": 9,
+        "lineno": 7,
+        "name": "set",
+        "node_id": 23,
+        "pos": null,
+        "returns": null,
+        "src": "91:52:0"
+      }
+    ],
+    "col_offset": 0,
+    "doc_string": null,
+    "end_col_offset": 24,
+    "end_lineno": 9,
+    "lineno": 1,
+    "node_id": 0,
+    "src": "0:143:0"
+  },
+  "bytecode": "0x740100000000000000000000000000000000000000006020526f7fffffffffffffffffffffffffffffff6040527fffffffffffffffffffffffffffffffff8000000000000000000000000000000060605274012a05f1fffffffffffffffffffffffffdabf41c006080527ffffffffffffffffffffffffed5fa0e000000000000000000000000000000000060a05260206102076101403934156100a157600080fd5b606051602061020760c03960c051806040519013156100bf57600080fd5b80919012156100cd57600080fd5b50610140516000556101ef56600436101561000d5761010f565b600035601c52740100000000000000000000000000000000000000006020526f7fffffffffffffffffffffffffffffff6040527fffffffffffffffffffffffffffffffff8000000000000000000000000000000060605274012a05f1fffffffffffffffffffffffffdabf41c006080527ffffffffffffffffffffffffed5fa0e000000000000000000000000000000000060a05263795313b060005114156100e75734156100ba57600080fd5b606051600435806040519013156100d057600080fd5b80919012156100de57600080fd5b50600435600055005b632a1afcd9600051141561010e57341561010057600080fd5b60005460005260206000f350005b5b60006000fd5b6100da6101ef036100da6000396100da6101ef036000f3",
+  "bytecodeSha1": "ddea5782f17bf256dd68a87538d8c89b5afba39e",
+  "compiler": {
+    "evm_version": "istanbul",
+    "minify_source": false,
+    "version": "0.1.0-b17"
+  },
+  "contractName": "Storage",
+  "coverageMap": {
+    "branches": {
+      "contracts/Storage.vy": {}
+    },
+    "statements": {
+      "contracts/Storage.vy": {
+        "Storage.set": {
+          "0": [
+            123,
+            143
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "0x600436101561000d5761010f565b600035601c52740100000000000000000000000000000000000000006020526f7fffffffffffffffffffffffffffffff6040527fffffffffffffffffffffffffffffffff8000000000000000000000000000000060605274012a05f1fffffffffffffffffffffffffdabf41c006080527ffffffffffffffffffffffffed5fa0e000000000000000000000000000000000060a05263795313b060005114156100e75734156100ba57600080fd5b606051600435806040519013156100d057600080fd5b80919012156100de57600080fd5b50600435600055005b632a1afcd9600051141561010e57341561010057600080fd5b60005460005260206000f350005b5b60006000fd",
+  "deployedSourceMap": "-1:-1:0:-;;;;;:::-;;:::-;:::-;;;;;;;;;;;;;;;;;;;;91:52;;;;;;:::-;;;;:::-;;;;:::-;-1:-1;;;;91:52;-1:-1;;91:52;;;;:::-;;;;:::-;;;;;;;:::-;;;;:::-;;141:2;-1:-1;123:15;:20;91:52;:::-;0:26;;;;;;:::-;;;;:::-;;;;:::-;;;;;;;;;;:::-;-1:-1::-;;;;",
+  "language": "Vyper",
+  "offset": [
+    0,
+    148
+  ],
+  "opcodes": "PUSH1 0x04 CALLDATASIZE LT ISZERO PUSH2 0x000D JUMPI PUSH2 0x010F JUMP JUMPDEST PUSH1 0x00 CALLDATALOAD PUSH1 0x1C MSTORE PUSH21 0x010000000000000000000000000000000000000000 PUSH1 0x20 MSTORE PUSH16 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF PUSH1 0x40 MSTORE PUSH32 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000000000000000000000000000000 PUSH1 0x60 MSTORE PUSH21 0x012A05F1FFFFFFFFFFFFFFFFFFFFFFFFFDABF41C00 PUSH1 0x80 MSTORE PUSH32 0xFFFFFFFFFFFFFFFFFFFFFFFED5FA0E0000000000000000000000000000000000 PUSH1 0xA0 MSTORE PUSH4 0x795313B0 PUSH1 0x00 MLOAD EQ ISZERO PUSH2 0x00E7 JUMPI CALLVALUE ISZERO PUSH2 0x00BA JUMPI PUSH1 0x00 DUP1 REVERT JUMPDEST PUSH1 0x60 MLOAD PUSH1 0x04 CALLDATALOAD DUP1 PUSH1 0x40 MLOAD SWAP1 SGT ISZERO PUSH2 0x00D0 JUMPI PUSH1 0x00 DUP1 REVERT JUMPDEST DUP1 SWAP2 SWAP1 SLT ISZERO PUSH2 0x00DE JUMPI PUSH1 0x00 DUP1 REVERT JUMPDEST POP PUSH1 0x04 CALLDATALOAD PUSH1 0x00 SSTORE STOP JUMPDEST PUSH4 0x2A1AFCD9 PUSH1 0x00 MLOAD EQ ISZERO PUSH2 0x010E JUMPI CALLVALUE ISZERO PUSH2 0x0100 JUMPI PUSH1 0x00 DUP1 REVERT JUMPDEST PUSH1 0x00 SLOAD PUSH1 0x00 MSTORE PUSH1 0x20 PUSH1 0x00 RETURN POP STOP JUMPDEST JUMPDEST PUSH1 0x00 PUSH1 0x00 REVERT",
+  "pcMap": {
+    "0": {
+      "offset": [
+        0,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x04"
+    },
+    "2": {
+      "op": "CALLDATASIZE"
+    },
+    "3": {
+      "op": "LT"
+    },
+    "4": {
+      "op": "ISZERO"
+    },
+    "5": {
+      "op": "PUSH2",
+      "value": "0x000D"
+    },
+    "8": {
+      "op": "JUMPI"
+    },
+    "9": {
+      "op": "PUSH2",
+      "value": "0x010F"
+    },
+    "12": {
+      "op": "JUMP"
+    },
+    "13": {
+      "op": "JUMPDEST"
+    },
+    "14": {
+      "op": "PUSH1",
+      "value": "0x00"
+    },
+    "16": {
+      "op": "CALLDATALOAD"
+    },
+    "17": {
+      "op": "PUSH1",
+      "value": "0x1C"
+    },
+    "19": {
+      "op": "MSTORE"
+    },
+    "20": {
+      "op": "PUSH21",
+      "value": "0x010000000000000000000000000000000000000000"
+    },
+    "42": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "44": {
+      "op": "MSTORE"
+    },
+    "45": {
+      "op": "PUSH16",
+      "value": "0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    },
+    "62": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "64": {
+      "op": "MSTORE"
+    },
+    "65": {
+      "op": "PUSH32",
+      "value": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000000000000000000000000000000"
+    },
+    "98": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "100": {
+      "op": "MSTORE"
+    },
+    "101": {
+      "op": "PUSH21",
+      "value": "0x012A05F1FFFFFFFFFFFFFFFFFFFFFFFFFDABF41C00"
+    },
+    "123": {
+      "op": "PUSH1",
+      "value": "0x80"
+    },
+    "125": {
+      "op": "MSTORE"
+    },
+    "126": {
+      "op": "PUSH32",
+      "value": "0xFFFFFFFFFFFFFFFFFFFFFFFED5FA0E0000000000000000000000000000000000"
+    },
+    "159": {
+      "op": "PUSH1",
+      "value": "0xA0"
+    },
+    "161": {
+      "op": "MSTORE"
+    },
+    "162": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH4",
+      "path": "contracts/Storage.vy",
+      "value": "0x795313B0"
+    },
+    "167": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "169": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "MLOAD",
+      "path": "contracts/Storage.vy"
+    },
+    "170": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "EQ",
+      "path": "contracts/Storage.vy"
+    },
+    "171": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "172": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x00E7"
+    },
+    "175": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "176": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "CALLVALUE",
+      "path": "contracts/Storage.vy"
+    },
+    "177": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "178": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x00BA"
+    },
+    "181": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "182": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "184": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "185": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "REVERT",
+      "path": "contracts/Storage.vy"
+    },
+    "186": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "187": {
+      "op": "PUSH1",
+      "value": "0x60"
+    },
+    "189": {
+      "op": "MLOAD"
+    },
+    "190": {
+      "op": "PUSH1",
+      "value": "0x04"
+    },
+    "192": {
+      "op": "CALLDATALOAD"
+    },
+    "193": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "194": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "196": {
+      "op": "MLOAD"
+    },
+    "197": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "SWAP1",
+      "path": "contracts/Storage.vy"
+    },
+    "198": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "SGT",
+      "path": "contracts/Storage.vy"
+    },
+    "199": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "200": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x00D0"
+    },
+    "203": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "204": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "206": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "207": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "REVERT",
+      "path": "contracts/Storage.vy"
+    },
+    "208": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "209": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "210": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "SWAP2",
+      "path": "contracts/Storage.vy"
+    },
+    "211": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "SWAP1",
+      "path": "contracts/Storage.vy"
+    },
+    "212": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "SLT",
+      "path": "contracts/Storage.vy"
+    },
+    "213": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "214": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x00DE"
+    },
+    "217": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "218": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "220": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "221": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "REVERT",
+      "path": "contracts/Storage.vy"
+    },
+    "222": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "223": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "POP",
+      "path": "contracts/Storage.vy"
+    },
+    "224": {
+      "fn": "Storage.set",
+      "offset": [
+        141,
+        143
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "statement": 0,
+      "value": "0x04"
+    },
+    "226": {
+      "op": "CALLDATALOAD"
+    },
+    "227": {
+      "fn": "Storage.set",
+      "offset": [
+        123,
+        138
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "229": {
+      "fn": "Storage.set",
+      "offset": [
+        123,
+        143
+      ],
+      "op": "SSTORE",
+      "path": "contracts/Storage.vy"
+    },
+    "230": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "STOP",
+      "path": "contracts/Storage.vy"
+    },
+    "231": {
+      "fn": "Storage.set",
+      "offset": [
+        91,
+        143
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "232": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH4",
+      "path": "contracts/Storage.vy",
+      "value": "0x2A1AFCD9"
+    },
+    "237": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "239": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "MLOAD",
+      "path": "contracts/Storage.vy"
+    },
+    "240": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "EQ",
+      "path": "contracts/Storage.vy"
+    },
+    "241": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "242": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x010E"
+    },
+    "245": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "246": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "CALLVALUE",
+      "path": "contracts/Storage.vy"
+    },
+    "247": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "ISZERO",
+      "path": "contracts/Storage.vy"
+    },
+    "248": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH2",
+      "path": "contracts/Storage.vy",
+      "value": "0x0100"
+    },
+    "251": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "JUMPI",
+      "path": "contracts/Storage.vy"
+    },
+    "252": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "254": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "DUP1",
+      "path": "contracts/Storage.vy"
+    },
+    "255": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "REVERT",
+      "path": "contracts/Storage.vy"
+    },
+    "256": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "257": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "259": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "SLOAD",
+      "path": "contracts/Storage.vy"
+    },
+    "260": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "262": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "MSTORE",
+      "path": "contracts/Storage.vy"
+    },
+    "263": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x20"
+    },
+    "265": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "PUSH1",
+      "path": "contracts/Storage.vy",
+      "value": "0x00"
+    },
+    "267": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "RETURN",
+      "path": "contracts/Storage.vy"
+    },
+    "268": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "POP",
+      "path": "contracts/Storage.vy"
+    },
+    "269": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "STOP",
+      "path": "contracts/Storage.vy"
+    },
+    "270": {
+      "offset": [
+        0,
+        26
+      ],
+      "op": "JUMPDEST",
+      "path": "contracts/Storage.vy"
+    },
+    "271": {
+      "op": "JUMPDEST"
+    },
+    "272": {
+      "op": "PUSH1",
+      "value": "0x00"
+    },
+    "274": {
+      "op": "PUSH1",
+      "value": "0x00"
+    },
+    "276": {
+      "op": "REVERT"
+    }
+  },
+  "sha1": "c2cf4d5ab6a4a73dc12696a84502b0d192540549",
+  "source": "storedData: public(int128)\n\n@public\ndef __init__(_x:int128):\n    self.storedData = _x\n    \n@public\ndef set(_x:int128):\n    self.storedData = _x\n    ",
+  "sourceMap": "",
+  "sourcePath": "contracts/Storage.vy",
+  "type": "contract"
+}
