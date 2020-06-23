@@ -11,7 +11,7 @@ struct Gasolinera:
 @payable
 def echar_gasolina(g: Gasolinera, m: string, c: int128)
     dep: int128 = g.registrogas[m]
-    cantidad: int128 = (dep - c) * g.preciogas
+    cantidad: wei_value = (dep - c) * g.preciogas
     # Comprobamos que el cliente tenga dinero suficiente para pagar
     assert msg.value >= cantidad
     # El cliente paga la gasolina
