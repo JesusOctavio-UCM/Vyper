@@ -34,7 +34,7 @@ def participar():
 def finalizar():
     assert block.timestamp >= self.fechalimite, "fecha límite no cumplida (aún)"
     assert self.balance >= self.objetivo, "balance no válido"
-    selfdestruct(self.beneficiary)
+    selfdestruct(self.beneficiario)
     
 # No se ha recaudado el dinero suficiente; se reembolsa a todos los participantes
 # (un máximo de 30 personas a la vez para evitar problemas de límite de gas)
