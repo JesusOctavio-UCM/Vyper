@@ -52,6 +52,8 @@ def alquilar(e: Empresa, m: string, t: timedelta):
 def devolver(e: Empresa, m: string)
     # Comprobamos que el coche está realmente prestado
     assert not e.flota[m].disp
+    # El cliente que llama a la función es el que alquiló el coche
+    assert e.registro[m].cliente == msg.sender
     # Si el cliente no devuelve el coche en fecha se le pone una multa del doble del precio por día
     devolucion: timestamp = e.registro[m].dev
     if block.timestamp > devolucion
@@ -65,7 +67,7 @@ def devolver(e: Empresa, m: string)
            # litros que le faltan al depósito para estar como se entregó
            falta: int128 = e.flota[m].deposito - getRegistrogas(m)
            # precio que tiene que pagar el cliente
-           cant: int128 = getPreciogas() * falta
+           cant: wei_value = getPreciogas() * falta
            send(e.empresa, cant)
         else # si la gasolina es correcta (puede haber más) se actualiza el depósito del coche
             e.flota[m].deposito = getRegistrogas(m)
