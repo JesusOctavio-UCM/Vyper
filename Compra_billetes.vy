@@ -52,10 +52,10 @@ def comprar_billetes(num_vuelo: int128, pasaporte: string, _devolucion: bool):
     _vuelo.registro[_vuelo.vendidos + 1] = msg.sender
     # guardo su pasaporte
     _vuelo.pasaportes[msg.sender] = pasaporte
-    # aumento en uno el número de billetes vendidos
-    _vuelo.vendidos += 1
     # guardamos si quiere devolución o cambio en caso de cancelacion
     _vuelo.devolucion[msg.sender] = _devolucion
+    # aumento en uno el número de billetes vendidos
+    _vuelo.vendidos += 1
     # se efectúa el pago del billete
     send(_vuelo.aerolinea, _vuelo.precio)
     
