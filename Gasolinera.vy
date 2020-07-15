@@ -15,9 +15,9 @@ def echar_gasolina(g: Gasolinera, m: string, c: int128)
     # Comprobamos que el cliente tenga dinero suficiente para pagar
     assert msg.value >= cantidad
     # El cliente paga la gasolina
-    send(e.gasolinera, cantidad)
+    send(g.gasolinera, cantidad)
     # Se actualiza el registro de su depósito
-    e.registrogas[m] = dep + c
+    g.registrogas[m] = dep + c
     
 # Utilizo estas dos funciones para poder llamar a las variables de este contrato desde otro  
 @public
